@@ -1,8 +1,12 @@
-#root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+
 }
 
 .logo {
@@ -16,6 +20,13 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.presentation p {
+  width: 80%;
+  font-size: 25px;
+}
+.presentation h1 {
+  font-size: 46px;
 }
 
 @keyframes logo-spin {
@@ -39,4 +50,33 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #000000; 
+  font-weight: bold;
+  text-align: center;
 }
