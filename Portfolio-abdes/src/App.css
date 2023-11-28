@@ -23,10 +23,25 @@ body {
 }
 .presentation p {
   width: 80%;
-  font-size: 25px;
+  font-size: 20px;
 }
 .presentation h1 {
   font-size: 46px;
+  border-bottom: solid 1px;
+}
+.presentation #me {
+  display: inline;
+}
+.presentation div {
+  display: flex;
+}
+.presentation img {
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+}
+.presentation {
+  margin-top: 100px;
 }
 
 @keyframes logo-spin {

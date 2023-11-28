@@ -14,6 +14,8 @@ const AboutMe = () => {
     <div>
       <Navbar />
       <div className="presentation">
+        <div>
+          <div id="me">
       <h1>About Me</h1>
       <p >
         Hello! I'm Abdeslam Boutaarourt, a dedicated Full-Stack Developer with a
@@ -21,7 +23,10 @@ const AboutMe = () => {
         in my third and final year at Erasmus Hogeschool Brussel, studying
         Multimedia & Creative Technology, I'm on an exciting journey to expand
         my horizons and delve deeper into the world of technology.
-      </p>{" "}
+      </p>
+      </div>{" "}
+      <img src="/image.png" alt="" />
+      </div>
       </div>
     </div>
     </motion.div>
