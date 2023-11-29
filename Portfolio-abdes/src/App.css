@@ -130,6 +130,7 @@ body {
 .mySkills p {
   margin-bottom: 10px;
   width: 70%;
+  padding: 0;
 }
 
 .mySkills ul {
@@ -175,7 +176,6 @@ body {
   vertical-align: middle;
   height: 15vh;
   width: 15vh;
- 
 }
 #sql {
   height: auto;
@@ -189,7 +189,10 @@ body {
   justify-content: center;
 }
 
-.MySkillstext{
+.mySkills .MySkillstext{
+  display: flex;
+  align-items: start;
+  padding-left: 50px;
 }
 /* Add these styles to your existing CSS or create a new CSS file */
 
