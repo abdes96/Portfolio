@@ -3,7 +3,7 @@ import React from "react";
 const MySkills = () => {
   return (
     <div className="mySkills">
-      <div>
+      <div className="MySkillstext">
         <h1>My Skills</h1>
         <div id="line"></div>
         <p >My journey as a developer has equipped me with a versatile skill set that includes:</p>
@@ -52,17 +52,12 @@ const MySkills = () => {
             <img src="/node.png" />
             <img src="/js.png" />
             <img src="/html.png" />
-            <img src="mist.jpg" />
-            <img src="paris.jpg" />
-          </div>
+            </div>
           <div className="column" >
             <img id="sql" src="/sql.png" />
 
             <img src="/laravel.png" />
-            <img src="wedding.jpg" />
-            <img src="mountainskies.jpg" />
-            <img src="rocks.jpg" />
-            <img src="underwater.jpg" />
+           
           </div>
         </div>
       </div>
