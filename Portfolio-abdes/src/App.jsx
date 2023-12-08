@@ -16,7 +16,8 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="*" element={<AboutMe />} />
+        <Route path="/" element={<AboutMe />} />
+
       </Routes>
     </>
   );

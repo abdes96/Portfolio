@@ -5,7 +5,7 @@ body {
   padding: 0;
   text-align: left;
   font-family: 'Inter', sans-serif;
-
+line-height: 2;
   background-color: #260B46;
   color: white;
 }
@@ -47,17 +47,21 @@ body {
 
 .presentation div {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .presentation img {
-  width:50%;
-  height: 50%;
+  width: 35vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+
 }
 
 #usercentric {
-  width: 32%;
-  height: 30%;
+  width: 33%;
+  height: 33%;
+  object-fit: cover;
 }
 
 #usercentricText p {
@@ -66,9 +70,10 @@ body {
 
 #usercentricText {
 
-  margin-top: 150px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .presentation {
@@ -107,7 +112,7 @@ body {
 }
 
 .navItem:hover {
-  border-left: 4px solid #fff; 
+  border-left: 4px solid #fff;
 }
 
 .navLink {
@@ -116,7 +121,10 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 30px;
+  font-size: 24px;
+
 }
+
 .navLink:hover {
   padding-left: 20px;
 }
@@ -129,25 +137,25 @@ body {
 
 .mySkills p {
   margin-bottom: 10px;
-  width: 70%;
   padding: 0;
 }
 
 .mySkills ul {
   list-style-type: none;
   padding: 0;
-  width: 70%;
 }
 
 .mySkills li {
   margin-bottom: 10px;
   line-height: 1.5;
-  
+
 }
+
 .mySkills h3 {
- font-size: 25px;
+  font-size: 25px;
   margin: 0;
 }
+
 #line {
   height: 1px;
   width: 120%;
@@ -160,10 +168,13 @@ body {
 }
 
 .row {
+  margin-top: 351px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  height: 600px;
 }
+
 .mySkills .column {
   display: flex;
   justify-content: center;
@@ -171,30 +182,47 @@ body {
   padding: 0 4px;
   flex-wrap: wrap;
 }
+
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  height: 15vh;
-  width: 15vh;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+
 }
-#sql {
-  height: auto;
-  width: auto
-}
+
+
 
 .mySkills div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-content: center;
 }
 
-.mySkills .MySkillstext{
+
+
+.mySkills .MySkillstext {
   display: flex;
   align-items: start;
   padding-left: 50px;
 }
-/* Add these styles to your existing CSS or create a new CSS file */
+
+.logo-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.logo-container p{
+
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+
+}
 
 form {
   max-width: 400px;
@@ -227,4 +255,28 @@ button {
 
 button:hover {
   color: white;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+.card img {
+  object-fit: cover;
+width: 750px;
+border-radius: 10px;
+cursor: pointer;
+transition: all 1s ease;
+
+}
+
+.card img:hover {
+  filter: blur(3px);
 }
