@@ -5,14 +5,18 @@ import Carousel from "../component/Carousel";
 import projectData from '../../public/projectData.json'; 
 
 const Projects = () => {
-  const CARDS = 3;
 
   const Card = ({ imageUrl, content }) => (
     <div className='card'>
-      {imageUrl && <img src={imageUrl} alt="Card Image" />}
-      {imageUrl && <div className="description">{content}</div>}
+      {imageUrl && (
+        <div className="image-container">
+          <img src={imageUrl} alt="Card Image" className="image" />
+          <div className="descriptionText">{content}</div>
+        </div>
+      )}
     </div>
   );
+  
 
   return (
     <div>

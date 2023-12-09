@@ -38,7 +38,16 @@ const Contact = () => {
         {/* Contact Form */}
         <form onSubmit={handleSubmit}>
           <label>
-            Name:
+            First Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Last Name:
             <input
               type="text"
               name="name"

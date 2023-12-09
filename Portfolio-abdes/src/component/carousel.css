@@ -61,3 +61,18 @@
         transform: translateX(80%) translatey(-50%);
     }
 }
+
+@media only screen and (max-width: 1300px) {
+
+    .carousel {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        perspective: 500px;
+        transform-style: preserve-3d;
+    }
+    .card .descriptionText {
+        font-size: 18px;
+    }
+
+}

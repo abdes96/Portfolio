@@ -1,21 +1,20 @@
 [
-    {
-      "id": 1,
-      "title": "Project 1",
-      "description": "This is the description for Project 1.",
-      "imageUrl": "/card1.png"
-    },
-    {
-      "id": 2,
-      "title": "Project 2",
-      "description": "This is the description for Project 2.",
-      "imageUrl": "/card2.png"
-    },
-    {
-      "id": 3,
-      "title": "Project 3",
-      "description": "This is the description for Project 3.",
-      "imageUrl": "/card2.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Front-end Animation Showcase",
+    "description": "Explore the fascinating world of front-end development in this React project. Immerse yourself in captivating animations powered by the Framer Motion library and witness dynamic data visualizations with the mighty Three.js. This project also features seamless API integration, fetching data in real-time for an enriching user experience.",
+    "imageUrl": "/card1.png"
+  },
+  {
+    "id": 2,
+    "title": "Movie Explorer with Node.js",
+    "description": "Embark on a cinematic journey with this JavaScript, HTML, and CSS project, powered by Node.js. Users can log in, seamlessly search for movies through various filters, and curate their own personalized favorite list. Dive deep into detailed movie information, making this project a comprehensive and enjoyable movie exploration experience.",
+    "imageUrl": "/card2.png"
+  },
+  {
+    "id": 3,
+    "title": "Dynamic Data Presentation",
+    "description": "Experience the power of dynamic data presentation in this project. Leveraging JavaScript and HTML, this project showcases real-time data rendering with Node.js. Users can interactively explore and analyze data, making it an engaging and informative platform for dynamic data enthusiasts.",
+    "imageUrl": "/card3.png"
+  }
+]

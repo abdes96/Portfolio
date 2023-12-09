@@ -8,7 +8,6 @@ import AboutMe from "./pages/AboutMe";
 import Navbar from "./component/navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
