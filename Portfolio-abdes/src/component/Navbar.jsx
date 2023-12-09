@@ -20,9 +20,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const menuList = document.querySelector("#menu-container .menu-list");
+    const menuContainer = document.querySelector("#menu-container");
 
     if (menuList) {
       menuList.style.right = isMenuOpen ? "0" : "-100%";
+
+    }
+
+    if (menuContainer) {
+      menuContainer.style.overflow = !isMenuOpen ? "hidden" : "";
+      menuContainer.style.position = !isMenuOpen ? "relative" : "";
     }
   }, [isMenuOpen]);
 
@@ -40,11 +47,10 @@ const Navbar = () => {
 
 
   return (
-    <motion.nav className="navbar">
+    <nav className="navbar">
       <div className="logo-container">
         <img src="/logo.svg" alt="Logo" className="logo" />
       </div>
-
       <div id="menu-container"  className={`menu-list ${isMenuOpen ? 'active' : ''}`}>
         <div id="menu-wrapper">
           <div id="hamburger-menu" onClick={handleMenuClick}
@@ -107,7 +113,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
       </ul>
-    </motion.nav>
+    </nav>
   );
 };
 
