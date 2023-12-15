@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-html ,body {
-  overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   text-align: left;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 2;
-  background-color: #260B46;
-  color: white;
+  background-color: #fafafe;
+  color: #04010b;
+  ;
 }
 
 .logo {
@@ -21,37 +19,61 @@ body {
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em red);
+  filter: drop-shadow(0 0 2em #9AEB5F);
   cursor: pointer;
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 .presentation p {
   font-size: 20px;
   font-weight: 400;
-  padding: 20px;
 
 }
 
-.presentation h1 {
+h1 {
+  border-bottom: 4px solid transparent;
+  background-image: linear-gradient(180deg, transparent 70%, #99eb5f77 50%);
+  width: max-content;
   font-size: 46px;
-  font-weight: 400;
-  padding: 30px;
+  font-weight: 700;
   text-transform: uppercase;
+  margin: auto;
+  margin-left: 0;
 }
 
 .presentation #me {
-  display: inline;
-  width: 40%;
+  display: flex;
+  width: 100%;
+  background-color: hsl(258, 58%, 72%, 20%);
+  border-radius: 10px;
+  margin-right: 30px;
+  background-image: none;
 }
 
-.presentation div {
-  display: flex;
-  justify-content: space-around;
+
+
+#me .textAboutMe {
+  display: block;
+  width: 80%;
+  margin: auto;
 }
+
+.presentation #imgMe {
+  position: relative;
+}
+
+.presentation #imgMe::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-image: linear-gradient(180deg, transparent 83%, #c3e7b0 50%);
+  z-index: 1;
+}
+
 
 .presentation img {
   width: 35vw;
@@ -61,18 +83,35 @@ body {
 
 }
 
-#usercentric {
-  width: 33%;
-  height: 33%;
+#usercentricImg {
+  display: flex;
+  justify-content: center;
+}
+
+
+#usercentricImg img {
+  width: 35vw;
+  height: 50vh;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-#usercentricText p {
-  width: 45%;
+#textUsercentric {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
 }
 
-#usercentricText {
+#textUsercentric div {
+  margin: auto;
+  width: 80%;
+}
 
+#usercentric {
+  margin: 50px;
   margin-top: 200px;
   display: flex;
   justify-content: space-around;
@@ -81,8 +120,14 @@ body {
 
 .presentation {
   margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
+}
 
+.wrapper {
+  margin: 150px;
 }
 
 
@@ -115,12 +160,11 @@ body {
 }
 
 .navItem:hover {
-  border-left: 4px solid #fff;
+  border-left: 4px solid #9AEB5F;
 }
 
 .navLink {
   text-decoration: none;
-  color: white;
   font-weight: bold;
   text-align: center;
   padding: 30px;
@@ -138,6 +182,7 @@ body {
   overflow: hidden;
   max-width: 100%;
   cursor: pointer;
+  display: none;
 }
 
 ul {
@@ -236,7 +281,7 @@ a {
   }
 
   #menu-wrapper {
-    display: flex;
+    display: block;
   }
 
   .navbar {
@@ -248,36 +293,52 @@ a {
 /*  end hamburger menu*/
 
 .mySkills {
-  margin-top: 20px;
+  margin: 50px;
+  margin-top: 200px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .mySkills p {
   margin-bottom: 10px;
   padding: 0;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+
 }
 
 .mySkills ul {
   list-style-type: none;
   padding: 0;
+  font-size: 20px;
+
 }
 
 .mySkills li {
   margin-bottom: 10px;
   line-height: 1.5;
 
+
 }
 
 .mySkills h3 {
   font-size: 25px;
   margin: 0;
+  color: #a88fe1;
+  ;
+
+
+
 }
 
 #line {
-  height: 1px;
-  width: 120%;
-  background-color: white;
+  height: 400px;
+  width: 7px;
+  border-radius: 10px;
+  background-color: #a88fe1;
+  padding: 0;
 }
 
 .mySkills li strong {
@@ -285,13 +346,7 @@ a {
   font-weight: 700;
 }
 
-.row {
-  margin-top: 351px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  height: 600px;
-}
+
 
 .mySkills .column {
   display: flex;
@@ -299,6 +354,8 @@ a {
   flex-direction: row;
   padding: 0 4px;
   flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
 }
 
 .column img {
@@ -312,30 +369,44 @@ a {
 
 
 
-.mySkills div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
 
 
 
 .mySkills .MySkillstext {
   display: flex;
-  align-items: start;
-  padding-left: 50px;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  margin: auto;
+}
+
+.mySkills .MySkillstext .introSkills {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.introSkills h1 {
+  padding: 0;
+  margin-left: 0;
+
 }
 
 .logo-container {
   text-align: center;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-container p {
 
-  border: solid 1px white;
+  border: solid 2px #a88fe1;
   border-radius: 10px;
   padding: 5px 15px;
   cursor: pointer;
@@ -363,16 +434,15 @@ textarea {
 }
 
 button {
-  color: #fff;
-  background-color: #260B46;
-  padding: 10px 15px;
-  border: 1px solid white;
-  cursor: pointer;
-  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #a88fe1;
 }
 
-button:hover {
-  color: white;
+
+button a {
+  font-size: 20px;
+  padding: 10px;
+  color: #a88fe1;
 }
 
 .projects-container {
@@ -381,6 +451,10 @@ button:hover {
   align-items: center;
 
 
+}
+
+.projects-container h1 {
+  margin: auto;
 }
 
 .card {
@@ -428,4 +502,73 @@ button:hover {
 .card .image-container:hover .descriptionText {
   opacity: 1;
   cursor: pointer;
+}
+
+.projectsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px;
+  margin-bottom: 150px;
+}
+
+.project img {
+  width: 40vw;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-top: 100PX;
+  justify-content: space-around;
+}
+
+.project div {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.project div p {
+  width: 80%;
+  font-size: 20px;
+}
+
+.TextProjects {
+  background-color: hsl(258, 58%, 72%, 20%);
+  border-radius: 10px;
+}
+
+.project .buttons {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project .buttons button {
+  transition-duration: 0.5s;
+
+}
+
+.project .buttons button:hover {
+  background-color: hsl(258, 58%, 72%, 20%);
+  border-radius: 10px;
+
+}
+
+.project .ImageProjects {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  
 }

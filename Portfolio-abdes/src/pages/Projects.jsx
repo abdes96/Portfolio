@@ -1,8 +1,6 @@
-import React from "react";
 import Navbar from "../component/navbar";
-import { motion } from "framer-motion";
 import Carousel from "../component/Carousel";
-import projectData from '../../public/projectData.json'; 
+import projectData from '../../public/projectData.json';
 
 const Projects = () => {
 
@@ -16,7 +14,7 @@ const Projects = () => {
       )}
     </div>
   );
-  
+
 
   return (
     <div>
@@ -31,8 +29,20 @@ const Projects = () => {
               imageUrl={project.imageUrl}
             />
           ))}
-        </Carousel>
+        </Carousel></div>
+      <div className="projectsDiv">
+        {projectData.map((project) => (
+          <div key={project.id} className="project">
+            <div className="TextProjects"> <h2>{project.title}</h2>
+              <div className="buttons">
+                <button> <a href=""> Live </a></button>      <button> <a href=""> Git repo </a></button>  </div>
+              <p>{project.description}</p></div>
+            <div className="ImageProjects">
+              <img src={project.imageUrl} /></div>
+          </div>
+        ))}
       </div>
+
     </div>
   );
 };

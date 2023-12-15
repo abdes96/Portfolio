@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1069.39 480.02">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .01em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: .02em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        fill: #c3e7b0;
+        font-family: Gabarito-Regular, Gabarito;
+        font-size: 35.33px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: .02em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        opacity: .57;
+      }
+
+      .cls-16 {
+        fill: #a88fe1;
+        stroke-width: 0px;
+      }
+
+      .cls-17 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-18 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-9" transform="translate(0 37.1)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-4" transform="translate(605.89 347.42)"><tspan x="0" y="0">.p</tspan><tspan class="cls-17" x="9.31" y="0">r</tspan><tspan x="13.12" y="0">oje</tspan><tspan class="cls-1" x="28.63" y="0">c</tspan><tspan x="34.16" y="0">t .but</tspan><tspan class="cls-3" x="60.57" y="0">t</tspan><tspan x="64.47" y="0">ons but</tspan><tspan class="cls-3" x="102.43" y="0">t</tspan><tspan x="106.33" y="0" xml:space="preserve">on {  </tspan><tspan x="0" y="14.4" xml:space="preserve">  t</tspan><tspan class="cls-18" x="9.06" y="14.4">r</tspan><tspan x="12.92" y="14.4">ansition</tspan><tspan class="cls-6" x="52.96" y="14.4">-</tspan><tspan x="56.86" y="14.4">du</tspan><tspan class="cls-18" x="70.23" y="14.4">r</tspan><tspan class="cls-5" x="74.1" y="14.4">a</tspan><tspan x="79.83" y="14.4">tion: 0.5s;</tspan><tspan x="0" y="28.8" xml:space="preserve">  </tspan><tspan x="0" y="43.2">}</tspan><tspan x="0" y="72">.p</tspan><tspan class="cls-17" x="9.31" y="72">r</tspan><tspan x="13.12" y="72">oje</tspan><tspan class="cls-1" x="28.63" y="72">c</tspan><tspan x="34.16" y="72">t .but</tspan><tspan class="cls-3" x="60.57" y="72">t</tspan><tspan x="64.47" y="72">ons but</tspan><tspan class="cls-3" x="102.43" y="72">t</tspan><tspan x="106.33" y="72">on:h</tspan><tspan class="cls-11" x="128.72" y="72">o</tspan><tspan class="cls-12" x="135.23" y="72">v</tspan><tspan x="140.88" y="72">er {</tspan><tspan x="0" y="86.4" xml:space="preserve">  back</tspan><tspan class="cls-3" x="28.7" y="86.4">g</tspan><tspan class="cls-17" x="35.34" y="86.4">r</tspan><tspan x="39.14" y="86.4">ound</tspan><tspan class="cls-13" x="65.77" y="86.4">-</tspan><tspan class="cls-14" x="69.67" y="86.4">c</tspan><tspan x="74.97" y="86.4">olo</tspan><tspan class="cls-2" x="90.98" y="86.4">r</tspan><tspan x="95.01" y="86.4">: hsl(258, 58%, 72%, 20%);</tspan><tspan x="0" y="100.8" xml:space="preserve">  bo</tspan><tspan class="cls-17" x="18.5" y="100.8">r</tspan><tspan x="22.31" y="100.8">de</tspan><tspan class="cls-7" x="35.09" y="100.8">r</tspan><tspan class="cls-10" x="38.95" y="100.8">-</tspan><tspan class="cls-7" x="42.64" y="100.8">r</tspan><tspan x="46.5" y="100.8">adius: 10</tspan><tspan class="cls-8" x="90.56" y="100.8">p</tspan><tspan x="97.22" y="100.8">x;</tspan><tspan x="0" y="129.6">}</tspan></text>
+  <g class="cls-15">
+    <path class="cls-16" d="m20.8.93c2.52-.53,6.5-.93,10.54-.93,5.77,0,9.48.99,12.27,3.25,2.32,1.72,3.71,4.38,3.71,7.89,0,4.31-2.85,8.09-7.56,9.81v.13c4.24,1.06,9.22,4.58,9.22,11.21,0,3.85-1.53,6.76-3.78,8.95-3.12,2.85-8.16,4.18-15.45,4.18-3.98,0-7.02-.26-8.95-.53V.93Zm5.77,18.3h5.24c6.1,0,9.68-3.18,9.68-7.49,0-5.24-3.98-7.29-9.81-7.29-2.66,0-4.18.2-5.11.4v14.39Zm0,21.42c1.13.2,2.79.26,4.84.26,5.97,0,11.47-2.19,11.47-8.69,0-6.1-5.24-8.62-11.54-8.62h-4.77v17.04Z"/>
+  </g>
+</svg>

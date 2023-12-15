@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Navbar from "../component/navbar";
 import { motion } from "framer-motion";
 
@@ -32,10 +32,8 @@ const Contact = () => {
     >
       <div>
         <Navbar />
-        <h2>Contact</h2>
-        <p>This is the contact page. You can customize the content here.</p>
-
-        {/* Contact Form */}
+        <h1>Contact</h1>
+      
         <form onSubmit={handleSubmit}>
           <label>
             First Name:
