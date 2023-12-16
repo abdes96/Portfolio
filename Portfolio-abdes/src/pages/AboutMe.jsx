@@ -1,6 +1,7 @@
 import Navbar from "../component/navbar";
 import { motion } from "framer-motion";
 import MySkills from "../component/Myskills";
+import { Link } from "react-router-dom";
 
 
 const AboutMe = () => {
@@ -93,9 +94,11 @@ const AboutMe = () => {
                   <p>
                     I have worked on a number of projects, ranging from small personal projects to larger collaborative efforts. These projects have allowed me to gain hands-on experience and further develop my skills.
                   </p>
-                  <button onClick={() => {/* Navigate to projects page */ }}>
+                  <Link to="/projects">
+                  <button >
                     More Info
                   </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
