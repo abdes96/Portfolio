@@ -8,7 +8,7 @@ import "./carousel.css"
 
 const Carousel = ({ children }) => {
   const MAX_VISIBILITY = 3;
-  const [active, setActive] = React.useState(2);
+  const [active, setActive] = React.useState(0);
   const count = React.Children.count(children);
   return (
     <div className='carousel'>

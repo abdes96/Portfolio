@@ -39,7 +39,7 @@ const MySkills = () => {
             </li>
             <li>
               <h3>Laravel:</h3> As a PHP framework, Laravel has been a
-              valuable tool in my toolkit for building robust web applications.
+              valuable tool in my toolkit for building a robust  web application.
             </li>
             <li>
               <h3>PHP:</h3> I have a strong foundation in PHP, allowing me
@@ -71,7 +71,7 @@ const MySkills = () => {
             borderRadius: "100%"
           }}
           className="logo-container">
-          <img src="/vite.svg" alt="Vite" />
+          <img src="skills/vite.svg" alt="Vite" />
           <p>Vite</p>
         </motion.div>
         <motion.div
@@ -81,7 +81,8 @@ const MySkills = () => {
             rotate: -90,
             borderRadius: "100%"
           }}
-          className="logo-container">            <img src="/react.png" alt="React" />
+          className="logo-container">
+          <img src="skills/react.png" alt="React" />
           <p>React</p>
         </motion.div>
         <motion.div
@@ -91,7 +92,8 @@ const MySkills = () => {
             rotate: -90,
             borderRadius: "100%"
           }}
-          className="logo-container">            <img src="/node.png" alt="Node.js" />
+          className="logo-container">
+          <img src="skills/node.png" alt="Node.js" />
           <p>Node.js</p>
         </motion.div>
         <motion.div
@@ -102,7 +104,7 @@ const MySkills = () => {
             borderRadius: "100%"
           }}
           className="logo-container">
-          <img src="/js.png" alt="JavaScript" />
+          <img src="skills/js.png" alt="JavaScript" />
           <p>JavaScript</p>
         </motion.div>
         <motion.div
@@ -113,7 +115,7 @@ const MySkills = () => {
             borderRadius: "100%"
           }}
           className="logo-container">
-          <img src="/html.png" alt="HTML" />
+          <img src="skills/html.png" alt="HTML" />
           <p>HTML</p>
         </motion.div>
         <motion.div
@@ -124,7 +126,18 @@ const MySkills = () => {
             borderRadius: "100%"
           }}
           className="logo-container">
-          <img id="sql" src="/sql.svg" alt="SQL" />
+          <img src="skills/css.webp" alt="HTML" />
+          <p>CSS</p>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: "100%"
+          }}
+          className="logo-container">
+          <img id="sql" src="skills/sql.svg" alt="SQL" />
           <p>SQL</p>
         </motion.div>
         <motion.div
@@ -135,7 +148,7 @@ const MySkills = () => {
             borderRadius: "100%"
           }}
           className="logo-container">
-          <img src="/laravel.png" alt="Laravel" />
+          <img src="skills/laravel.png" alt="Laravel" />
           <p>Laravel</p>
         </motion.div>
       </div>

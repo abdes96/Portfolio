@@ -1,0 +1,38 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left; 
+    padding: 20px; 
+}
+.welcome-page h1 {
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+
+.welcome-page p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.welcome-page button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color:  #a88fe1;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.welcome-page button:hover {
+    background-image: linear-gradient(180deg, transparent 30%, #99eb5f77 70%);
+    border-radius: 10px;
+
+}

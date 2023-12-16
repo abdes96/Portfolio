@@ -1,0 +1,134 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  
+  }
+  
+  .projects-container h1 {
+    margin: auto;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card .image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+  
+  }
+  
+  .card .image-container {
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .card .image-container:hover .image {
+    filter: blur(5px);
+    cursor: pointer;
+  }
+  
+  .card .descriptionText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 20px;
+  
+  }
+  
+  .card .image-container:hover .descriptionText {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .projectsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 150px;
+  }
+  
+  .project img {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  
+  }
+  
+  .project {
+    display: flex;
+    margin-top: 100PX;
+    justify-content: space-around;
+  }
+  
+  .project div {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .project div p {
+    width: 80%;
+    font-size: 20px;
+  }
+  
+  .TextProjects {
+    background-color: hsl(258, 58%, 72%, 20%);
+    border-radius: 10px;
+  }
+  
+  .project .buttons {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .project .buttons button {
+    transition-duration: 0.5s;
+    padding: 10px 20px;
+    background-color: #a88fe1;
+    cursor: pointer;
+  }
+  
+  .project .buttons button:hover {
+    background-image: linear-gradient(180deg, transparent 30%, #99eb5f77 70%);
+    border-radius: 10px;
+  
+  }
+  
+  .project .ImageProjects {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  .project .ImageProjects:hover {
+    transform: scale(1.05); 
+  }
