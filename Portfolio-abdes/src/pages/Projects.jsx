@@ -39,7 +39,21 @@ const Projects = () => {
               imageUrl={project.imageUrl}
             />
           ))}
-        </Carousel></motion.div>
+        </Carousel>
+
+        < div className="arrow">
+          <a href="#info"> <img src="/arrow.png" alt="" />
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+              src="https://cdn.lordicon.com/xcrjfuzb.json"
+              trigger="hover"
+              colors="primary:#a88fe1"
+              style="width:250px;height:250px">
+            </lord-icon>
+          </a>
+        </div>
+
+      </motion.div>
       <div className="projectsDiv">
 
 

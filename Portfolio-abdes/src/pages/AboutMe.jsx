@@ -94,7 +94,7 @@ const AboutMe = () => {
                   <p>
                     I have worked on a number of projects, ranging from small personal projects to larger collaborative efforts. These projects have allowed me to gain hands-on experience and further develop my skills.
                   </p>
-                  <Link to="/projects">
+                  <Link to="/projects" onClick={() => window.scrollTo(0, 0)}>
                   <button >
                     More Info
                   </button>

@@ -66,11 +66,11 @@ h1 {
 .presentation #imgMe::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   width: 100%;
-  height: 70%;
-  background-image: linear-gradient(180deg, transparent 83%, #c3e7b0 50%);
+  height: 60%;
+  background-image: linear-gradient(180deg, transparent 82%, #c3e7b0 50%);
   z-index: 1;
 }
 
@@ -144,6 +144,15 @@ h1 {
   padding: 50px;
 }
 
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 150px;
+}
+
 .navList {
   list-style: none;
   margin: 0;
@@ -154,28 +163,46 @@ h1 {
 }
 
 .navItem {
+  position: relative;
   margin: auto;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-.navItem:hover {
-  border-left: 4px solid #9AEB5F;
+.navLink::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 15px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, transparent 20%, #c3e7b0 0%);
+
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
 }
+
+.navLink:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
 
 .navLink {
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  padding: 30px;
   font-size: 24px;
   color: black;
-
+  transition: all 0.2s ease-in-out;
 }
 
 
 .navLink:hover {
-  padding-left: 20px;
+  padding: 0;
+  color: #a88fe1;
+  width: max-content;
+  font-size: 26px;
 }
 
 /* hamburger menu*/
@@ -211,7 +238,7 @@ a {
   height: 2px;
   border-radius: 10px;
   color: black;
-  background-color: white;
+  background-color: black;
   position: absolute;
   transform: rotate(0deg);
   transition: .4s ease-in-out;
@@ -259,7 +286,7 @@ a {
   overflow-y: auto;
   overflow-x: hidden;
   transition: right 0.4s ease;
-
+  font-weight: 700;
 }
 
 
@@ -276,27 +303,13 @@ a {
 }
 
 
-@media (max-width: 1300px) {
-  .navList {
-    display: none;
 
-  }
-
-  #menu-wrapper {
-    display: block;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-}
 
 /*  end hamburger menu*/
 
 .mySkills {
   margin: 50px;
-  margin-top: 200px;
+  margin-top: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -334,6 +347,7 @@ a {
 
 
 }
+
 .mySkills li strong {
   margin-right: 5px;
   font-weight: 700;
@@ -412,6 +426,7 @@ a {
   color: white;
   transition: 0.5s;
 }
+
 #projects {
   margin: 100px;
   padding: 20px;
@@ -422,9 +437,9 @@ a {
   background-size: 40%;
   background-position: right;
   background-repeat: no-repeat;
-  
-  
-  
+
+
+
 }
 
 #textProjects {
@@ -449,7 +464,7 @@ a {
 
 #textProjects button:hover {
   background-image: linear-gradient(180deg, transparent 30%, #99eb5f77 70%);
-    border-radius: 5px;
+  border-radius: 5px;
 
 }
 
@@ -467,7 +482,7 @@ a {
 button {
   padding: 10px;
   border: 2px solid #a88fe1;
-  
+
 }
 
 
@@ -477,3 +492,245 @@ button a {
   color: white;
 }
 
+/* REPsonsive help me with it */
+
+@media screen and (max-width: 1500px) {
+  p {
+    font-size: 18px !important;
+  }
+
+  .wrapper {
+    margin: 0;
+  }
+
+  .presentation img {
+    width: 30vw;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .presentation #me {
+    width: 60%;
+    margin-right: 0;
+  }
+
+
+  #textUsercentric {
+    width: 60%;
+    margin-right: 0;
+  }
+
+  #usercentricImg img {
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  #projects {
+    margin: 100px;
+  }
+
+}
+
+
+
+@media (max-width: 1300px) {
+  .navList {
+    display: none;
+
+  }
+
+  #menu-wrapper {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .presentation img {
+    width: 30vw;
+    height: 40vh;
+
+  }
+
+  .mySkills .column {
+    width: 30%;
+    margin: auto;
+  }
+
+  .logo-container {
+    padding: 15px;
+  }
+
+  .navbar {
+    padding: 50px;
+  }
+  .navbar .logo-container {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .presentation {
+    flex-direction: column;
+  }
+
+  .presentation #me {
+    margin: 0;
+
+
+
+  }
+
+  .presentation #imgMe {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .presentation img {
+    width: 90%;
+
+  }
+
+  .presentation #imgMe::after {
+
+
+    width: 90%;
+    left: auto;
+    bottom: 0;
+  }
+
+  .presentation #me {
+    width: 100%;
+  }
+
+  #usercentric {
+    flex-direction: column;
+  }
+
+  #textUsercentric {
+    width: 100%;
+    margin: 0;
+  }
+
+  #usercentricImg {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  #usercentricImg img {
+    width: 90%;
+  }
+
+  #projects {
+    margin: 50px;
+    background-image: none;
+  }
+
+  #textProjects {
+    width: 100%;
+  }
+
+  .mySkills .MySkillstext {
+    width: 70%;
+  }
+
+  .mySkills .column {
+    width: 60%;
+  }
+
+  .navbar {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-container {
+    padding: 0;
+  }
+
+  .navbar {
+    padding: 30px;
+  }
+
+  .presentation {
+    margin: 20px;
+  }
+
+  #usercentric {
+    margin: 20px;
+  }
+
+  .presentation #me {
+    height: 100%;
+  }
+
+  .presentation img {
+    width: 80%;
+    height: 30vh;
+
+  }
+
+  .presentation #imgMe::after {
+    width: 80%;
+
+  }
+
+  .presentation p {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  #usercentricImg img {
+    width: 80%;
+    height: auto;
+  }
+
+  #usercentricImg {
+    padding: 0px;
+  }
+
+  #projects {
+    margin: 30px;
+  }
+
+  .mySkills p {
+    font-size: 18px;
+  }
+
+  .mySkills ul {
+    font-size: 16px;
+  }
+
+  .logo-container p {
+    font-size: 16px;
+  }
+
+  .logo-container {
+    padding: 0px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .mySkills {
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .column img {
+    height: 50px;
+    width: 50px;
+  }
+  .mySkills .column {
+    width: 50%;
+  }
+}
