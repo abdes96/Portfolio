@@ -114,7 +114,8 @@
         display: none;
     }
         .nav {
-            width: 60px;
+            width: 45px;
+            color: black;
         }
 
         .card .image-container:hover .image {
@@ -122,5 +123,14 @@
 
             filter: blur(0px) !important ;
             cursor: pointer;
+        }
+
+        .right {
+            right: 10px;
+            transform: translateX(50%) translatey(-50%) !important;
+        }
+        .left {
+            left: 10px;
+            transform: translateX(-50%) translatey(-50%) !important;
         }
 }

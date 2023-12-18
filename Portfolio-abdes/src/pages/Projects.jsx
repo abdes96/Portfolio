@@ -77,9 +77,7 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
-      <div>
         <img className="scrollToTop" onClick={scrollToTop} src="/arrow-up.gif" alt="" />
-      </div>
     </div>
   );
 };
