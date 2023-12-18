@@ -85,9 +85,9 @@
 @media screen and (max-width: 800px) {
     .carousel {
         position: relative;
-        width: 70%;
-        height: 250px;
-        perspective: 200px;
+        width: 330px;
+        height: 200px;
+        perspective: 160px;
         transform-style: preserve-3d;
     }
 
@@ -103,15 +103,24 @@
 
 @media screen and (max-width: 500px) {
     .carousel {
-        height: 200px;
-        perspective: 160px;
+        height: 170px;
+        width: 280px;
+        perspective: 100px;
         transform-style: preserve-3d;
     }
 
     .card .descriptionText {
         font-size: 10px !important;
+        display: none;
     }
         .nav {
             width: 60px;
+        }
+
+        .card .image-container:hover .image {
+
+
+            filter: blur(0px) !important ;
+            cursor: pointer;
         }
 }
