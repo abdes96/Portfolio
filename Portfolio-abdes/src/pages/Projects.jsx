@@ -1,9 +1,17 @@
 import Navbar from "../component/navbar";
 import Carousel from "../component/Carousel";
-import projectData from '../../public/projectData.json';
+import projectData from '../data/projectData';
 import { motion } from "framer-motion";
 import "./css/projects.css";
+
 const Projects = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   const Card = ({ imageUrl, content }) => (
     <div className='card'>
@@ -41,15 +49,9 @@ const Projects = () => {
           ))}
         </Carousel>
 
-        < div className="arrow">
-          <a href="#info"> <img src="/arrow.png" alt="" />
-            <script src="https://cdn.lordicon.com/lordicon.js"></script>
-            <lord-icon
-              src="https://cdn.lordicon.com/xcrjfuzb.json"
-              trigger="hover"
-              colors="primary:#a88fe1"
-              style="width:250px;height:250px">
-            </lord-icon>
+        <div className="arrow">
+          <a href="#ImageProjects">
+            <img src="/arow.gif" alt="" />
           </a>
         </div>
 
@@ -62,16 +64,22 @@ const Projects = () => {
             variants={FadeInAnimationVariants}
             initial="initial"
             whileInView="animate">
-            <div className="TextProjects"> <h2>{project.title}</h2>
+            <div className="TextProjects">
+              <h2>{project.title}</h2>
               <div className="buttons">
-                <button> <a href=""> Live </a></button>      <button> <a href=""> Git repo </a></button>  </div>
-              <p>{project.description}</p></div>
-            <div className="ImageProjects">
+                {project.url && <button><a href={project.url}>Live</a></button>}
+                <button><a href="">Git repo</a></button>
+              </div>
+              <p>{project.description}</p>
+            </div>
+            <div id="ImageProjects" className="ImageProjects">
               <img src={project.imageUrl} /></div>
           </motion.div>
         ))}
       </div>
-
+      <div>
+        <img className="scrollToTop" onClick={scrollToTop} src="/arrow-up.gif" alt="" />
+      </div>
     </div>
   );
 };

@@ -34,7 +34,9 @@
 }
 
 .card .image-container:hover .image {
-    filter: blur(5px);
+
+
+    filter: blur(5px) brightness(60%);
     cursor: pointer;
 }
 
@@ -99,6 +101,10 @@
     border-radius: 10px;
 }
 
+.project h2 {
+    text-align: center;
+}
+
 .project .buttons {
     display: flex;
     margin: auto;
@@ -132,6 +138,32 @@
 
 .project .ImageProjects:hover {
     transform: scale(1.05);
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.arrow a {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow a img {
+    width: 15%;
+    height: 15%;
+}
+
+
+img.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -168,12 +200,12 @@
 
 }
 
-@media  screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .projectsDiv {
         margin: 50px;
     }
 
-    
+
 
     .project div {
         width: 100%;
@@ -196,7 +228,7 @@
     .project .buttons .button {
         margin: 10px;
     }
-    
+
 }
 
 @media screen and (max-width: 500px) {
@@ -204,7 +236,7 @@
         margin: 20px;
     }
 
-   
+
 
     .project div {
         width: 100%;
@@ -227,5 +259,5 @@
     .project .buttons .button {
         margin: 10px;
     }
-    
+
 }

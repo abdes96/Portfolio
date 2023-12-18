@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -296,6 +299,7 @@ a {
   padding: 20px;
   text-transform: uppercase;
   border-top: 1px solid #dbdcd2;
+  text-align: center;
 }
 
 #menu-container .menu-list li:first-of-type {
@@ -495,6 +499,9 @@ button a {
 /* REPsonsive help me with it */
 
 @media screen and (max-width: 1500px) {
+  .mySkills ul { 
+    font-size: 18px;
+  }
   p {
     font-size: 18px !important;
   }
@@ -537,6 +544,9 @@ button a {
 
 
 @media (max-width: 1300px) {
+  .mySkills {
+    margin: 0;
+  }
   .navList {
     display: none;
 
@@ -575,6 +585,9 @@ button a {
 }
 
 @media screen and (max-width: 800px) {
+  .mySkills {
+    margin: 50px;
+  }
 
   .presentation {
     flex-direction: column;

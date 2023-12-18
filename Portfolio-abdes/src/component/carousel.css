@@ -36,6 +36,9 @@
         opacity: var(--active);
     }
 }
+.card .descriptionText {
+    width: 80%;
+}
 
 .nav {
     color: white;
@@ -89,7 +92,7 @@
     }
 
     .card .descriptionText {
-        font-size: 13px !important;
+        font-size: 12px !important;
         width: 80% !important  ;
     }
     .nav {

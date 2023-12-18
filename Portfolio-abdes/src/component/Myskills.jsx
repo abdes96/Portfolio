@@ -151,6 +151,17 @@ const MySkills = () => {
           <img src="skills/laravel.png" alt="Laravel" />
           <p>Laravel</p>
         </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: "100%"
+          }}
+          className="logo-container">
+          <img src="skills/xcode.png" alt="Laravel" />
+          <p>Xcode</p>
+        </motion.div>
       </div>
 
 

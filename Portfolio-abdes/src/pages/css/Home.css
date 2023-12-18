@@ -90,3 +90,73 @@ a img {
     height: 150px;
 
 }
+@media  screen and (max-width: 800px) {
+    .welcome-page {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-page div {
+        padding: 0;
+    }
+    .welcome-page h1 {
+        font-size: 25px !important;
+    }
+    .welcome-page div .ImgDiv {
+        margin: 0 auto;
+    }
+    .welcome-page p {
+        font-size: 14px !important;
+    }
+    .welcome-page button {
+        font-size: 1em;
+    }
+    .welcome-page  a {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .welcome-page  button:hover {
+        background-image: linear-gradient(180deg, transparent 30%, #99eb5f77 70%);
+        border-radius: 10px;
+    }
+    .welcome-page .logos {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .logos a {
+        margin: 0;
+        padding: 0;
+    }
+    .logos a img {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+    .linkedIn-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .selfieMe {
+        padding-bottom: 0;
+    }
+    @media screen and (max-width: 550px) {
+        .selfieMe {
+            padding-bottom: 10px;
+        }
+        .welcome-page div .ImgDiv {
+            width: 200px;
+            height: 200px;
+        }
+        p {
+            text-align: left !important;
+        }
+        .selfieMe {
+            scale: 0.2;
+        }
+    }
+
+    
+}

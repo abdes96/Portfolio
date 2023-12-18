@@ -33,7 +33,7 @@ const Contact = () => {
     emailjs.sendForm('service_e1xvbhq', 'template_ii97sqp', e.target, 'UEXRFJifMlZNo4Okn')
       .then((result) => {
         console.log(result.text);
-        setShowModal(true); 
+        setShowModal(true);
         setFormData({ name: "", email: "", message: "" });
 
       }, (error) => {
@@ -51,6 +51,18 @@ const Contact = () => {
         exit={{ opacity: 0 }}
         className="Contact"
       >
+        <div className='logos'>
+          <motion.a whileHover={{ scale: 1.2, rotate: -90, delay: 0.1 }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+            <img src="/github.png" alt="GitHub Logo" className="github-logo" />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+            <img src="/linkedIn.webp" alt="linkedIn Logo" className="linkedIn-logo" />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+            <img src="/mail.png" alt="linkedIn Logo" className="linkedIn-logo" />
+          </motion.a>
+        </div>
+        <div>
         <h1 className="contact-header">Contact</h1>
 
         <div className="form-container">
@@ -102,6 +114,7 @@ const Contact = () => {
             <button type="submit" className="form-button">Submit</button>
           </form>
         </div>
+        </div>
       </motion.div>
       {showModal && (
         <div className="modal">
@@ -111,6 +124,7 @@ const Contact = () => {
           </div>
         </div>
       )}
+      
     </>
   );
 };

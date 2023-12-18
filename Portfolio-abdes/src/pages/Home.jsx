@@ -16,7 +16,7 @@ const Home = () => {
                 <p>
                     Welcome to my portfolio! I'm a student and web developer with a passion for creating efficient, scalable, and user-friendly solutions. With a strong foundation in JavaScript, React, and Node.js, I strive to stay up-to-date with the latest industry trends and technologies. Explore my projects to see my skills in action, or click 'About Me' to learn more about my journey .
                 </p>
-                <Link to="/">
+                <Link to="/aboutme">
                     <button> <h3>About Me </h3></button>
                 </Link>
             </div>
