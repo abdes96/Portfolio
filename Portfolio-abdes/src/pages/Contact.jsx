@@ -53,13 +53,13 @@ const Contact = () => {
       >
         <div className='logos'>
           <motion.a whileHover={{ scale: 1.2, rotate: -90, delay: 0.1 }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
-            <img src="/github.png" alt="GitHub Logo" className="github-logo" />
+           <a href="https://github.com/abdes96"><img src="/github.png" alt="GitHub Logo" className="github-logo" /></a> 
           </motion.a>
           <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
-            <img src="/linkedIn.webp" alt="linkedIn Logo" className="linkedIn-logo" />
+            <a href="https://www.linkedin.com/in/abdeslam-boutaarourt-7142a52a5/"><img src="/linkedIn.webp" alt="linkedIn Logo" className="linkedIn-logo" /></a> 
           </motion.a>
-          <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
-            <img src="/mail.png" alt="linkedIn Logo" className="linkedIn-logo" />
+          <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="mailto:abdeslamboutaarourt@hotmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="/mail.png" alt="Email Logo" className="email-logo" />
           </motion.a>
         </div>
         <div>

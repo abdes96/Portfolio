@@ -1,6 +1,6 @@
 import Navbar from "../component/navbar";
 import Carousel from "../component/Carousel";
-import projectData from '../data/projectData';
+import projectData from '../data/projectData.json';
 import { motion } from "framer-motion";
 import "./css/projects.css";
 
@@ -68,7 +68,7 @@ const Projects = () => {
               <h2>{project.title}</h2>
               <div className="buttons">
                 {project.url && <button><a href={project.url}>Live</a></button>}
-                <button><a href="">Git repo</a></button>
+                <button><a href={project.github}>Git repo</a></button>
               </div>
               <p>{project.description}</p>
             </div>

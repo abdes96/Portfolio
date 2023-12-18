@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './css/Home.css';
 import githubLogo from '/github.png';
 import linkedInLogo from '/linkedIn.webp';
+import emailLogo from '/mail.png';
 
 const Home = () => {
     return (
@@ -21,11 +22,14 @@ const Home = () => {
                 </Link>
             </div>
             <div className='logos'>
-                <motion.a whileHover={{ scale: 1.2, rotate: -90 , delay : 0.2 }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+                <motion.a whileHover={{ scale: 1.2, rotate: -90 , delay : 0.2 }} href="https://github.com/abdes96" target="_blank" rel="noopener noreferrer">
                     <img src={githubLogo} alt="GitHub Logo" className="github-logo" />
                 </motion.a>
-                <motion.a  whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedInLogo} alt="linkedIn Logo" className="linkedIn-logo" />
+                <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="https://www.linkedin.com/in/abdeslam-boutaarourt-7142a52a5/" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedInLogo} alt="LinkedIn Logo" className="linkedIn-logo" />
+                </motion.a>
+                <motion.a whileHover={{ scale: 1.2, rotate: -90, borderRadius: "100%" }} href="mailto:abdeslamboutaarourt@hotmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src={emailLogo} alt="Email Logo" className="email-logo" />
                 </motion.a>
             </div>
 

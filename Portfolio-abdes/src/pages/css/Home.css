@@ -85,11 +85,7 @@ a img {
     height: 100px;
     margin: 0 10px;
 }
-.linkedIn-logo {
-    width: 150px;
-    height: 150px;
 
-}
 @media  screen and (max-width: 800px) {
     .welcome-page {
         flex-direction: column;

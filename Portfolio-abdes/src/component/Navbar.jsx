@@ -87,7 +87,7 @@ const Navbar = () => {
       }}>
       <nav className="navbar" >
         <div className="logo-container">
-          <Link to="/home">
+          <Link to="/">
             <svg width="134" height="75" viewBox="0 0 134 75" fill="none" xmlns="http://www.w3.org/2000/svg">
               <motion.path variants={logo}
                 initial="hidden"
